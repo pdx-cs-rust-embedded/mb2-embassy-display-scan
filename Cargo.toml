@@ -13,7 +13,9 @@ cortex-m-rt = "0.7.0"
 
 [dependencies.microbit-bsp]
 version = "0.3.0"
-path = "/local/src/old/microbit-bsp"
+git = "http://github.com/BartMassey-upstream/microbit-bsp"
+branch = "devel"
+default-features = false
 
 [dependencies.embassy-executor]
 version = "0.5.0"
