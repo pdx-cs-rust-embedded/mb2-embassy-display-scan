@@ -8,28 +8,18 @@ version = "0.1.0"
 defmt = "1.0.1"
 defmt-rtt = "1.0.0"
 cortex-m-rt = "0.7.5"
-microbit-bsp = "0.3.0"
-#embassy-sync = { version = "0.5.0", features = ["defmt"] }
-#embassy-futures = { version = "0.1.1", features = ["defmt"] }
 
-#[dependencies.microbit-bsp]
-#version = "0.3.0"
-#git = "http://github.com/BartMassey-upstream/microbit-bsp"
-#branch = "devel"
-#default-features = false
+[dependencies.microbit-bsp]
+version = "0.6.0"
+git = "http://github.com/lulf/microbit-bsp"
 
 [dependencies.embassy-executor]
 version = "0.7.0"
-#features = ["defmt", "integrated-timers", "arch-cortex-m", "executor-thread"]
 features = ["defmt", "arch-cortex-m", "executor-thread"]
 
 [dependencies.embassy-time]
-version = "*"
+version = "0.4"
 features = ["defmt"]
-
-#[dependencies.embassy-nrf]
-#version = "0.1.0"
-#features = ["defmt", "nrf52833", "time-driver-rtc1", "gpiote", "nfc-pins-as-gpio"]
 
 [dependencies.cortex-m]
 version = "0.7.7"
